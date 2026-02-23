@@ -43,10 +43,18 @@
   <body>
   <header>
     <p>... re: Tech, Finance, & Health enthusiast ...</p>
-    <br>
-    
   </header>
-
+    <audio id="player" src="Loves(')Time.1.m4a" controls autoplay loop></audio>
+    <button id="muteBtn">Mute</button>
+    <script>
+      const audio = document.getElementById('player');
+      const btn = document.getElementById('muteBtn');
+      btn.addEventListener('click', () => {
+        audio.muted = !audio.muted;
+        btn.textContent = audio.muted ? "Unmute" : "Mute";
+      });
+    </script>
+    <br>
   <img src="flower$.jpeg" alt="sumnSofar" class="pfp">
   <footer></footer>
   </body>
