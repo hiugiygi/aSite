@@ -47,6 +47,20 @@
         border: 5px black;
         box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       } 
+      .key{
+        const key = [
+        g:"https://www.github.com/", 
+        e:"https://www.gemini.com/", 
+        r:"https://www.grok.com/", 
+        c:"https://www.chapgpt.com/", 
+        o:"https://www.copilot.com/", 
+        d:"https://www.deepseek.com", 
+        x:"https://www.x.com", 
+        l:"https://www.leo.com"]; 
+      }
+      .skeleton{
+        const skeleton = key[Math.floor(Math.Random() * key.length)];
+      }
     </style>
   </head>
 <body> 
@@ -54,27 +68,15 @@
     <p> Bot Venting Machine </p>
   </header>
   <img src="crater.png" alt="hmm" class="pic pulse">
-  <!-- random choice selector  --- mind browser permissions -->
-  <p>hello World</p><br>
-  <!--        to move 
-
-  <script> fetch(skeleton)
+  <!-- random ai site choice selector  --- mind browser permissions -->
+  <br><p>hello World</p><br>
+  <button id="bot">Need Something?</button>
+  <script>
+    const bbtn = document.getElementById("bot')
+      bbtn.addEventListener('click', () => {
+        fetch(skeleton);
+      });
   </script>
-  .key{
-        const a = ["g", "e", "r", "c", "o", "d", "x", "l"]; 
-        g="https://www.github.com/";
-        e="https://www.gemini.com/";
-        r="https://www.grok.com/";
-        c="https://www.chatgpt.com/";
-        o="https://www.copilot.com/";
-        d="https://www.deepseek.com/";
-        x="https://www.x.com/";
-        l="https://www.leo.com/";
-      }
-      .skeleton{
-        
-      }
-  -->
   <footer></footer>
 </body>
 </html>
