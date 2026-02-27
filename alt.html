@@ -46,20 +46,6 @@
         border-radius: 10px;
         border: 5px black;
         box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      } 
-      .key{
-        const key = [
-        g:"https://www.github.com/", 
-        e:"https://www.gemini.com/", 
-        r:"https://www.grok.com/", 
-        c:"https://www.chapgpt.com/", 
-        o:"https://www.copilot.com/", 
-        d:"https://www.deepseek.com", 
-        x:"https://www.x.com", 
-        l:"https://www.leo.com"]; 
-      }
-      .skeleton{
-        const skeleton = key[Math.floor(Math.Random() * key.length)];
       }
     </style>
   </head>
@@ -72,9 +58,23 @@
   <br><p>hello World</p><br>
   <button id="bot">Need Something?</button>
   <script>
-    const bbtn = document.getElementById("bot')
-      bbtn.addEventListener('click', () => {
-        fetch(skeleton);
+    const key =
+        g:"https://www.github.com/", 
+        e:"https://www.gemini.com/", 
+        r:"https://www.grok.com/", 
+        c:"https://www.chapgpt.com/", 
+        o:"https://www.copilot.com/", 
+        d:"https://www.deepseek.com", 
+        x:"https://www.x.com", 
+        l:"https://www.leo.com"];
+    
+    function skeleton() = {
+      const code = Object.values(key);
+      returm code[Math.floor(Math.random() * key.length)];}
+    const bbtn = document.getElementById("bot");
+    bbtn.addEventListener('click', () => {
+      const skeletonKey = skeleton();
+      window.location.href = (skeletonKey);});
       });
   </script>
   <footer></footer>
