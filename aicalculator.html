@@ -59,26 +59,26 @@
   <button id="bot">Need Something?</button>
   <script>
     const key =
-        [g:"https://www.github.com/", 
-        e:"https://www.gemini.com/", 
-        r:"https://www.grok.com/", 
-        c:"https://www.chapgpt.com/", 
-        o:"https://www.copilot.com/", 
-        d:"https://www.deepseek.com", 
-        x:"https://www.x.com", 
-        l:"https://www.leo.com"];
-    function skeleton() = {
+    {g:"https://www.github.com/", 
+     e:"https://www.gemini.com/", 
+     r:"https://www.grok.com/", 
+     c:"https://www.chapgpt.com/", 
+     o:"https://www.copilot.com/", 
+     d:"https://www.deepseek.com", 
+     x:"https://www.x.com", 
+     l:"https://www.leo.com"};
+    function skeleton()  {
       const code = Object.values(key);
-      returm code[Math.floor(Math.random() * key.length)];}
+      return code[Math.floor(Math.random() * code.length)];}
     const bbtn = document.getElementById("bot");
     bbtn.addEventListener('click', () => {
       const skeletonKey = skeleton();
       window.location.href = (skeletonKey);});
   </script>
-  <br>
-  <a href = "https://copilot.microsoft.com/conversations/join/KN5K7GjMwRcyd16497o52" target= "_blank"> try copilot </a>
+  <br><br><br><br>
+  <a href = "https://copilot.microsoft.com/conversations/join/KN5K7GjMwRcyd16497o52" target= "_blank"> try copilot </a><br><br><br>
+  <a href="https://youtube.com/shorts/f0Pta3La5kM?si=Y8QaHE0-M28jxJ9H" target="_blank"> aShort Vid </a>
   <footer>
-    <a href="https://youtube.com/shorts/f0Pta3La5kM?si=Y8QaHE0-M28jxJ9H" target="_blank"> aShort Vid </a>
   </footer>
 </body>
 </html>
