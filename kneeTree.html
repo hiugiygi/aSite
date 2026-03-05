@@ -8,7 +8,7 @@
         text-align: center;
         font-family: "Times", "arial", "serif";
         background-color: black;
-        height: 8vh;
+        height: 60%;
         width: 100%;
         position: relative;
         top: 0;}
@@ -34,10 +34,16 @@
   </head>
   <body>
   <header>
-    <!-->not showing<--><p>3log</p>
+    <p>3log</p>
   </header>
+    <input type="text" id="data" placeholder="dumpDaData">
+    <button onclick="dataDigger()">load</button>
   <script>
-    
+    function dataDigger(){
+      const value = document.getElementById(data).value;
+      const info = value;
+      console.log("Here's some information about", value, info);
+    }
   </script>
   <footer>
     <a href="www.tumblr.com"> mediaLink </a>
