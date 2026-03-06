@@ -1,17 +1,15 @@
 pragma solidity >=0.4.16 <0.9.0;
 
 contract quest {
-address public 81089FBF92C26CA186B701F0F50B7844F699E3BA7415C26CFA2C281178A7107E; //digsig
+address public admin; 
 
 mapping(address => uint) public balances;
 
 event Sent(address from, address to, uint amount};
-contructor(){
-= msg.sender;
-}
+
 
 function mint(address reciever, uint amount){public 
-require (msg.sender == 81089FBF92C26CA186B701F0F50B7844F699E3BA7415C26CFA2C281178A7107E);
+require (msg.sender == admin);
 balances[reciever] += amount;
 }
 
